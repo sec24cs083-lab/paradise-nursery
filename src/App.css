@@ -1,0 +1,105 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #24372b;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: #fffdf7;
+}
+
+.navbar h2 {
+  color: #276749;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 20px;
+  background: #28734b;
+  color: white;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #1d5738;
+}
+
+.hero {
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(13, 38, 25, 0.86),
+      rgba(13, 38, 25, 0.18)
+    ),
+    url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=85")
+    center/cover no-repeat;
+  color: white;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.eyebrow {
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  margin: 18px 0;
+}
+
+.hero-content > p:not(.eyebrow) {
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.primary-button {
+  margin-top: 16px;
+  background: #e3a847;
+  color: #173c28;
+  font-weight: bold;
+}
+
+.primary-button:hover {
+  background: #f1bd64;
+}
+
+.about-section {
+  padding: 55px 8%;
+  max-width: 950px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.about-section h2 {
+  color: #28734b;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px 5%;
+  }
+
+  .hero {
+    min-height: 420px;
+    padding: 40px 6%;
+  }
+}
